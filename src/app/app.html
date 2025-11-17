@@ -232,6 +232,11 @@
       </svg>
       <h1>Hello, {{ title() }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      @if (authenticatedService.isAuthenticated()) {
+        <p><button (click)="authenticatedService.logout()" mat-menu-item>Logout</button></p>
+      } @else {
+        <p><button (click)="authenticatedService.login()" matButton>Login</button></p>
+      }
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
@@ -337,6 +342,5 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 
 <router-outlet />
