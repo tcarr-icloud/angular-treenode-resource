@@ -2,6 +2,11 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
 
+![Welcome Guest](screenshots/Guest_home.png)
+![Sign In](screenshots/Sign_in.png)
+![Welcome](screenshots/Authenticated_home.png)
+![Tree](screenshots/Tree_component.png)
+
 ## Development server
 
 To start a local development server, run:
