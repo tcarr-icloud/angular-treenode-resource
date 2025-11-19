@@ -1,0 +1,21 @@
+<form [formGroup]="flatNodeFormGroup" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="id">Id:</label>
+    <input id="id" readonly formControlName="id">
+  </div>
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name">
+  </div>
+  <div>
+    <label for="description">Description:</label>
+    <input id="description" formControlName="description">
+  </div>
+  <div>
+    <label for="parentId">ParentId:</label>
+    <input id="parentId" formControlName="parentId">
+  </div>
+  <button mat-button type="button" (click)="onSubmit()">Save</button>
+  <button mat-button type="button" (click)="onDelete()">Delete</button>
+  <button mat-button type="button" (click)="onCancel()">Cancel</button>
+</form>
