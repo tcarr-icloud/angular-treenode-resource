@@ -6,10 +6,11 @@ import {environment} from '../../../environments/environment';
 import {AuthenticatedService} from '../../authenticated-service';
 import {TreeNode} from '../tree-node';
 import {MatButton} from '@angular/material/button';
+import {MatCard, MatCardContent} from '@angular/material/card';
 
 @Component({
   selector: 'app-add-flat-node-dialog',
-  imports: [ReactiveFormsModule, JsonPipe, MatButton],
+  imports: [ReactiveFormsModule, JsonPipe, MatButton, MatCard, MatCardContent],
   templateUrl: './add-flat-node-dialog.component.html',
   styleUrl: './add-flat-node-dialog.component.css',
 })

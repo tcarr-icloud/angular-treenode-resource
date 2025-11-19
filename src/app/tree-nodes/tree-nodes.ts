@@ -9,10 +9,12 @@ import {FormsModule} from '@angular/forms';
 import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 import {AddFlatNodeDialog} from './add-flat-node-dialog/add-flat-node-dialog.component';
 import {TreeNode} from './tree-node';
+import {MatCard, MatCardContent, MatCardSubtitle, MatCardTitle} from '@angular/material/card';
+import {MatDivider} from '@angular/material/divider';
 
 @Component({
   selector: 'app-tree-nodes',
-  imports: [MatTreeModule, MatIconModule, MatIconButton, MatMenu, MatMenuItem, MatContextMenuTrigger, FormsModule],
+  imports: [MatTreeModule, MatIconModule, MatIconButton, MatMenu, MatMenuItem, MatContextMenuTrigger, FormsModule, MatCard, MatCardContent, MatDivider, MatCardSubtitle, MatCardTitle],
   templateUrl: './tree-nodes.html',
   styleUrl: './tree-nodes.css',
 })
